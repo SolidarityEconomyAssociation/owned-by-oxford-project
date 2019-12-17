@@ -1,0 +1,22 @@
+{
+  "name": "owned-by-oxford-project",
+  "version": "0.1.0",
+  "description": "Owned by Oxford",
+  "main": "index.js",
+  "config": {
+    "deploy_to": "",
+    "deploy_user": "www-data",
+    "deploy_group": "www-data"
+  },
+  "scripts": {
+    "build": "sea-site-build -c config -m node_modules/sea-map -d build src/*",
+    "server": "php -t build/out -S localhost:8080",
+    "deploy": "set -x; rsync -avzc --rsync-path='sudo rsync' --delete --owner=\"$npm_package_config_deploy_user\" --group=\"$npm_package_config_deploy_group\" --exclude=build.txt --exclude=.* build/out/ \"${npm_package_config_deploy_to:?Please define the '$npm_package_name:deploy_to' npm config parameter}\""
+  },
+  "author": "Solidarity Economy Association",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "sea-map": "SolidarityEconomyAssociation/sea-map#semver:^1.2.2"
+  },
+  "devDependencies": {}
+}

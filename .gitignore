@@ -1,2 +1,8 @@
 *~
 *#
+
+/build/
+/node_modules/
+
+# Regenerated
+/config/version.json
