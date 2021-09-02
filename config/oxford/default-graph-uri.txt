@@ -1,1 +1,1 @@
-https://w3id.org/sea-lod/oxford/
+https://dev.lod.coop/sea-lod/oxford
