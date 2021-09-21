@@ -1,5 +1,5 @@
 {
-  "namedDatasets": ["oxford", "dotcoop"],
+  "namedDatasets": ["oxford", "dotcoop", "coops-uk"],
   "htmlTitle": "Owned by Oxford",
   "defaultLatLng": ["51.7520", "-1.2577" ],
   "filterableFields": [{ "field": "primaryActivity", "label": "Activities" }],

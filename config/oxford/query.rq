@@ -19,7 +19,6 @@ WHERE {
         OPTIONAL { ?uri foaf:homepage ?www . }
         OPTIONAL { ?uri owl:sameAs ?sameas . }
         OPTIONAL { ?uri dc:description ?desc . }
-        OPTIONAL { ?uri dc:description ?desc . }
         OPTIONAL { ?uri vcard:hasTelephone ?hasTel . }
         OPTIONAL { ?hasTel vcard:value ?tel . }
         OPTIONAL { ?uri vcard:hasEmail ?hasEmail . }
