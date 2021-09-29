@@ -1,9 +1,22 @@
 {
   "namedDatasets": ["owned-by-oxford", "oxford", "dotcoop", "coops-uk"],
   "htmlTitle": "Owned by Oxford",
+  "filterableFields" : [
+    "regorg",
+    "primaryActivity"
+  ],
+  "languages": ["EN"],
+  "language": "EN",
+  "vocabularies": [
+    { "endpoint": "http:\/\/dev.data.solidarityeconomy.coop:8890/sparql",
+      "uris": {
+        "https:\/\/dev.lod.coop/essglobal/2.1/standard/activities/": "aci",
+        "https:\/\/dev.lod.coop/essglobal/2.1/standard/organisational-structure/": "os"
+      }
+    }
+  ],
   "defaultLatLng": ["51.7520", "-1.2577" ],
-  "filterableFields": [{ "field": "primaryActivity", "label": "Activities" }],
-  "doesDirectoryHaveColours": true,
+  "initialBounds": [[51.5520,-1.2377],[51.9520,-1.2777]],
   "disableClusteringAtZoom": false,
   "maxZoomOnGroup":12,
   "maxZoomOnOne": 14,
