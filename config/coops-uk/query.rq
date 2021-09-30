@@ -31,7 +31,6 @@ WHERE {
 	?addr osspatialrelations:within ?within .
 	?within geo:lat ?lat.
 	?within geo:long ?lng.
-	FILTER(?lat > 51.7520-0.3 && ?lat < 51.7520+0.3)
-	FILTER(?lng > -1.2577-0.3 && ?lng < -1.2577+0.3)
+	FILTER(REGEX(UCASE(?postcode), '^OX[0-9]'))
 }
 LIMIT 40000
