@@ -36,8 +36,8 @@ function getAddress(initiative, getTerm) {
   return address;
 }
 
-function getDotcoopDomains(initiative) {
-  // Initiative's dotcoop domains. Note, not all have a website.
+function getWebsite(initiative) {
+  // Initiative's website. Note, not all have a website.
   if (initiative.www)
     return `<a href="${initiative.www}" target="_blank" >${initiative.www}</a>`;
   return '';
@@ -127,7 +127,7 @@ function getPopup(initiative, sse_initiatives) {
   let popupHTML = `
     <div class="sea-initiative-details">
       <h2 class="sea-initiative-name">${initiative.name}</h2>
-      ${getDotcoopDomains(initiative)}
+      ${getWebsite(initiative)}
       <h4 class="sea-initiative-org-structure">${getOrgStructure(initiative, values["os:"], values["aci:"], values["qf:"])}</h4>
       <h4 class="sea-initiative-org-typology">${getBMT(initiative, values["bmt:"])}</h4>
       <h4 class="sea-initiative-economic-activity">${getPrimaryActivity(initiative, values["aci:"])}</h4>
