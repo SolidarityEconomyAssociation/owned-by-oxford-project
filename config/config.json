@@ -1,5 +1,5 @@
 {
-  "namedDatasets": ["owned-by-oxford", "oxford", "dotcoop", "coops-uk"],
+  "namedDatasets": ["owned-by-oxford", "oxford", "dotcoop", "coops-uk", "covid-mutual-aid"],
   "htmlTitle": "Owned by Oxford",
   "filterableFields" : [
   ],
