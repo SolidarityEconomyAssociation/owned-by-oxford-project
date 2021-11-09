@@ -2,8 +2,6 @@
   "namedDatasets": ["owned-by-oxford", "oxford", "dotcoop", "coops-uk"],
   "htmlTitle": "Owned by Oxford",
   "filterableFields" : [
-    "regorg",
-    "primaryActivity"
   ],
   "languages": ["EN"],
   "language": "EN",
