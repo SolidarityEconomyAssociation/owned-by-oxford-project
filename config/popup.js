@@ -59,7 +59,7 @@ function getTwitter(initiative) {
 
 function getPopup(initiative, sse_initiatives) {
   function getTerm(propertyName) {
-    const vocabUri = sse_initiatives.getVocabUriForProperty(propertyName);
+    const vocabUri = sse_initiatives.getPropertySchema(propertyName).vocabUri;
     return sse_initiatives.getVocabTerm(vocabUri, initiative[propertyName]);
   }
   
